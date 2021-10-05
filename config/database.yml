@@ -17,10 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: developer
-  password: developer.123
-  host: localhost
-  port: 5432
+  # username: developer
+  # password: developer.123
+  # host: localhost
+  # port: 5432
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: ecommerce_production
-  username: ecommerce
-  password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
+  # username: ecommerce
+  # password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
